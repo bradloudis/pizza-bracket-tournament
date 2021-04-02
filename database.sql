@@ -1,7 +1,7 @@
 CREATE TABLE "tournament" (
 	"id" SERIAL PRIMARY KEY,
 	"num_judges" INT,
-	"num_pizas" INT
+	"num_pizzas" INT
 );
 
 CREATE TABLE "judge" (
