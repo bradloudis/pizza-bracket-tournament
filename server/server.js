@@ -5,6 +5,7 @@ const PORT = 5000;
 
 /** --------- Require routes ------------ **/
 const tournamentRouter = require('./routes/tournament.router');
+const pizzaRouter = require('./routes/pizza.router');
 
 /** ---------- MIDDLEWARE ---------- **/
 app.use(express.json());
@@ -15,6 +16,7 @@ app.use(express.static('build'));
 
 /** ---------- ROUTES ---------- **/
 app.use('/api/tournament', tournamentRouter);
+app.use('/api/pizza', pizzaRouter);
 
 /** ---------- START SERVER ---------- **/
 app.listen(PORT, () => {
